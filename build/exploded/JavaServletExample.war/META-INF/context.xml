@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/JavaServletExample" reloadbale="true">
+    <!--mysql-->
+    <Resource
+        name="jdbc/backend_database" 
+        auth="Container"
+        type="javax.sql.DataSource"
+        driverClassName="com.mysql.cj.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/backend?serverTimezone=UTC"
+        username="root" 
+        password=""
+        maxActive="100" 
+        maxIdle="20" 
+        minIdle="5" 
+        maxWait="10000"
+        defaultAutoCommit="true"
+    />
+    
+    <!--postgres-->
+    <!--    
+    <Resource
+        name="jdbc/backend_database" 
+        auth="Container"
+        type="javax.sql.DataSource" 
+        driverClassName="org.postgresql.Driver"
+        url="jdbc:postgresql://database:5432/sensorthings"
+        username="sensorthings" password="ChangeMe"
+        maxTotal="20" maxIdle="10" maxWaitMillis="-1"
+        defaultAutoCommit="false"
+    />
+    -->
+</Context>
